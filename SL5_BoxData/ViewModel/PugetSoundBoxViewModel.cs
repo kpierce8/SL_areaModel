@@ -15,7 +15,7 @@ using System.Diagnostics;
 
 namespace SL5_BoxData.ViewModel
 {
-    public class PugetSoundBoxViewModel
+    public class PugetSoundBoxViewModel : Observable
     {
      //   public Thickness quadEIHPthickness { get; set; }
      //   public int width1 { get; set; }
@@ -30,8 +30,8 @@ namespace SL5_BoxData.ViewModel
 
             theBoxData = getData.observeableBoxes;
 
-            //_sliderValue = new ObservabelDoubleValue { observableDouble = 20.0 };
-            _sliderValue = 20.0;
+            //_sliderValue = new ObservabelDoubleValue(20.0);
+            _sliderValue = 60.0;
             
             _currentBoxes = getCurrent(_sliderValue);
            // currentBoxes = new boxDataSource();
@@ -66,6 +66,7 @@ SliderValue = _sliderValue;
         {
             get
             {
+                
                 return _sliderValue;
             }
             set
@@ -78,9 +79,9 @@ SliderValue = _sliderValue;
                 _boxData.getUGAData(currentBoxes);
                 _boxData.getUGACngData(currentBoxes);
                 _boxData.getAreaCngData(currentBoxes);
-                //PropertyChanged("SliderValue");
-                //PropertyChanged("BoxData");
-               //PropertyChanged("currentBoxes");
+                NotifyPropertyChanged("SliderValue");
+                NotifyPropertyChanged("BoxData");
+                NotifyPropertyChanged("currentBoxes");
             }
         }
 
@@ -125,17 +126,19 @@ SliderValue = _sliderValue;
 
         boxDataSource getCurrent(double sliderValue)
         {
-             int theRow = (int) sliderValue;
-             if (theRow > 0)
+          
+                int theRow = (int) sliderValue;
+             if (theRow >= 2)
              {
                  var theBox = theBoxData.Where(b => b.row == theRow).First();
                  return theBox;
              }
              else
              {
-                 var theBox = theBoxData.Where(b => b.row == 1).First();
+                 var theBox = theBoxData.Where(b => b.row == 2).First();
                  return theBox;
-             }
+             }        
+           
         }   
     }
 }

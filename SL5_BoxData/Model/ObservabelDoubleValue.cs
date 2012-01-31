@@ -13,6 +13,11 @@ namespace SL5_BoxData.Model
 {
     public class ObservabelDoubleValue : Observable
     {
-        public double observableDouble { get; set; }
+        public double observeableDouble { get; set; }
+
+        public ObservabelDoubleValue(double value)
+        {
+            observeableDouble = value;
+        }
     }
 }
