@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SL5_BoxData.MainPage" Collapsed="true">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SL5_BoxData.Model.boxDataSource" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCIAAAAAAAAAAAAgABEIAACAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Model\boxDataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SL5_BoxData.Model.boxStats" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAgCAAAMAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Model\boxStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SL5_BoxData.Model.myDoubleConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\doubleConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SL5_BoxData.Model.getBoxData" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgGQCIABIIAAAAIAIoBAAACAAEAAhAAAAACAAAAAQA=</HashCode>
+      <FileName>Model\getBoxData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SL5_BoxData.Model.ObservabelDoubleValue" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ObservabelDoubleValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SL5_BoxData.Model.Observable" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Observable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SL5_BoxData.Model.XMLgetter">
+    <Position X="3.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Model\XML_SL_getter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SL5_BoxData.ViewModel.PugetSoundBoxViewModel">
+    <Position X="10.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAECAAAAAAQAAAAAAAAAAAAAAAEAAAABAgAA=</HashCode>
+      <FileName>ViewModel\PugetSoundBoxViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
